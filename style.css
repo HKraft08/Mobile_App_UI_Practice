@@ -1,6 +1,37 @@
 * {
     background-color: rgb(26 26 46);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.stories-container {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.story-items {
+    cursor: pointer;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background: linear-gradient(rgb(61, 143, 225), rgb(247, 57, 40));
+}
+
+.story-items img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: block;
+}
+
 .nav-container {
     display: flex;
     justify-content: center;
@@ -22,6 +53,8 @@
     align-items: center;
 
     font-size: 13px;
+
+    cursor: pointer;
 
     background-color: white;
     border: none;
